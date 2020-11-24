@@ -1,1 +1,43 @@
 
+<app-navbar></app-navbar>
+<div class="card">
+    <div class="card-body">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">{{selectedAlbum.name}}</p>
+              <p class="card-text">{{selectedAlbum.description}}</p>
+             
+
+            </div>
+          </div>
+        <div class="card-text">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Artista</th>
+                        <th>Precio</th>
+                        <th>Comprar</th>
+                        <th>Detalles</th>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td> 
+                                {{selectedAlbum.name}}
+                            </td>
+                            <td>
+                                {{selectedAlbum.artistname}}
+                            </td>
+                            <td>
+                                {{selectedAlbum.price}}
+                            </td>
+                            <td>
+                                <button >Comprar</button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
