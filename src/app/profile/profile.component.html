@@ -1,0 +1,36 @@
+
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title" style="text-align: center;">
+          Profile
+        </h2>
+        <div class="card-text">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Artista</th>
+                        <th>Precio</th>
+                        <th>Tiempo</th>
+                        <th>Detalles</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let album of albums">
+                            <td> 
+                                {{album.name}}
+                            </td>
+                            <td>
+                                {{album.artistname}}
+                            </td>
+                            <td>
+                                {{album.price}}
+                            </td>
+                            <td>
+                                300 minutos
+                            </td>
+                            <td>
+                                <button routerLink="/album/{{album.id}}/details">Detalles</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
