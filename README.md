@@ -1,1 +1,3 @@
 # AppsVanguardia
+
+Use branch master
